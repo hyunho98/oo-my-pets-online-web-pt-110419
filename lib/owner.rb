@@ -62,5 +62,11 @@ class Owner
     }
   end
 
+  def sell_pets
+    Dogs.all.each{|i|
+    if i.owner == self
+      i.mood = "nervous"
+      i.owner = nil
+    end}
 
 end
