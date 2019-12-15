@@ -73,5 +73,6 @@ class Owner
       i.mood = "nervous"
       i.owner = nil
     end}
+    
 
 end
