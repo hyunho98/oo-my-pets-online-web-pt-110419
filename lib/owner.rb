@@ -33,4 +33,15 @@ class Owner
       end
     }
   end
+
+  def dogs
+    Dog.all.select{|i|
+      if i.owner == self
+        i
+      end
+    }
+  end
+
+  def 
+
 end
