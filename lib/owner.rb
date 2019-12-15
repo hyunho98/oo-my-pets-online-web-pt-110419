@@ -68,5 +68,10 @@ class Owner
       i.mood = "nervous"
       i.owner = nil
     end}
+    Cats.all.each{|i|
+    if i.owner == self
+      i.mood = "nervous"
+      i.owner = nil
+    end}
 
 end
