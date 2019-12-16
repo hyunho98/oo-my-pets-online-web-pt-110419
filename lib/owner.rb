@@ -63,12 +63,12 @@ class Owner
   end
 
   def sell_pets
-    Dogs.all.each{|i|
+    Dog.all.each{|i|
     if i.owner == self
       i.mood = "nervous"
       i.owner = nil
     end}
-    Cats.all.each{|i|
+    Cat.all.each{|i|
     if i.owner == self
       i.mood = "nervous"
       i.owner = nil
